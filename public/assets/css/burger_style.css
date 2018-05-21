@@ -1,0 +1,200 @@
+body {
+	font-family: 'Pavanam', sans-serif;
+}
+
+/*HORIZONTAL NAVIGATION*/
+.header {
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #e89867;
+	margin-bottom: 15px;
+	background-color: #efefef;
+	line-height: 40px;
+	padding-left: 10px;
+}
+
+#name {
+	display: inline-block;
+	font-weight: bold;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.links {
+	display: inline-block;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: #9a97a4;
+}
+
+#name:hover {
+	background-color: #f1e215;
+}
+
+.links:hover {
+	background-color: #f1e215;
+}
+
+/*VEGGIE BURGER HERO*/
+img {
+	width: 375px;
+	display: block;
+	margin: auto;
+}
+
+/*VEGGIE BURGER LOADING TEXT*/
+h1, p {
+	text-align: center;
+}
+
+h1 {
+	position: relative;
+    color: rgba(0, 0, 0, .3);
+    color: #f0ceaf;
+    font-weight: bold;
+    font-family: 'Tauri', sans-serif;
+}
+
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 90%;
+    white-space: nowrap;
+    color: #ffffff;
+    color: #d0361f;
+    color: #333333;
+    font-weight: bold;
+    animation: loading 5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+p {
+	font-size: 17px;
+}
+
+/*MAIN CONTAINER*/
+.main {
+	margin: auto;
+	width: 400px;
+}
+
+/*BURGER DIVS*/
+.both {
+	margin: auto;
+	width: 600px;
+}
+
+.burger_left {
+	width: 300px;
+	position: relative;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+.burger_right {
+	width: 300px;
+	position: relative;
+	float: right;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
+/*DEVOUR IT BUTTON*/
+.devour {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: -4px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid #e89867;
+  background-color: #93d775;
+  margin-top: -21px;
+  
+}
+
+/*ORDER IT AGAIN BUTTON*/
+.order-again {
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  bottom: -4px;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 5px solid #dd6465;
+  background-color: #ecb086;
+  margin-top: -21px;
+}
+
+/*BURGER CONTAINER, INCLUDES NAME AND BUTTON*/
+.burger, .devoured-burgers {
+	position: relative;
+	width: 270px;
+	height: 60px;
+    background-color: #f7d6bc;
+    margin-bottom: 10px;
+    padding: 10px;
+	border: 1px solid #f0b28c;
+	border-bottom: 5px solid #e89867;
+}
+
+/*RIGHT COLUMN: DEVOURED BURGERS*/
+.devoured-burgers {
+    border: 1px solid #f0b28c;
+    border-bottom: 5px solid #dd6465;
+}
+
+/*NAME OF ORDERED BURGER*/
+.order {
+	width: 196px;
+	display: inline-block;
+}
+
+/* INPUT BURGER TYPE */
+input {
+	display: block;
+	margin: auto;
+	width: 290px;
+	height: 65px;
+	padding: 10px;
+	background-color: #efefef;
+	font-size: 19px;
+	text-align: center;
+	border: 3px solid #f1e318;
+}
+
+/* PLACE ORDER BUTTON */
+#order {
+	display: block;
+	margin: auto;
+	width: 180px;
+	height: 30px;
+	padding-top: 3px;
+	background-color: #d0361f;
+	color: #f1e318;
+	font-size: 17px;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*HORIZONTAL RULE*/
+.line {
+	width: 220px;
+	display: block;
+	margin: auto;
+	border-bottom: 10px solid #63c537;
+}

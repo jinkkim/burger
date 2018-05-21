@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<link href="https://fonts.googleapis.com/css?family=Pavanam|Tauri" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/burger_style.css" type="text/css" />
+		<title>EAT THE BURGER</title>
+	</head>
+	<body>
+		<div class="header">
+
+  <div id="name">
+    <a href="http://github.com/jinkkim/" target="_blank">
+      mysql express handlebar burger
+    </a>
+  </div>
+</div>
+
+<div class="main">
+
+  <img src="assets/img/burger.png" height="300" width="300" alt="Burger illustration (prawny/pixabay)"/>
+
+  <h1 data-text="Eat-Da-Burger!">Eat-Da-Burger!</h1>
+</div>
+
+<div class="both">
+
+  <div class="burger_left">
+    <div class="burger">
+      <div class="order">
+        char burger
+      </div>
+      <div>
+        <form action="/5?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" class="devour">
+            Devour it!
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="order">
+        portabello burger
+      </div>
+      <div>
+        <form action="/6?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" class="devour">
+            Devour it!
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="order">
+        avocado burger
+      </div>
+      <div>
+        <form action="/10?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" class="devour">
+            Devour it!
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="order">
+        mushroom
+      </div>
+      <div>
+        <form action="/12?_method=PUT" method="POST">
+          <input type="hidden" name="devoured" value="true">
+          <button type="submit" class="devour">
+            Devour it!
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="burger_right">
+    <div class="devoured-burgers">
+      <div class="order">
+        1
+        Burger Burger
+          <form action="/1?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        2
+        Burger 2
+          <form action="/2?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        3
+        Burger 3
+          <form action="/3?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        4
+        veggie heaven burger
+          <form action="/4?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        7
+        name
+          <form action="/7?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        8
+        kldka;lsdf;
+          <form action="/8?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        9
+        Upton Moore
+          <form action="/9?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+    <div class="devoured-burgers">
+      <div class="order">
+        11
+        tomatoe burger
+          <form action="/11?_method=PUT" method="POST">
+            <input type="hidden" name="devoured" value="false">
+            <button type="submit" class="order-again">
+              Order it!
+            </button>
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="main">
+
+  <form class="create-update-form" action="/" method="POST">
+    <div class="form-group">
+      <input type="text" id="ca" name="name" placeholder="Your burger" required/>
+    </div>
+    <button type="submit" id="order">
+      Place Order
+    </button>
+  </form>
+
+  <p>Type in the name of the burger you want to eat, then place your order.</p>
+  
+  <div class="line"></div>
+
+</div>
+
+
+	</body>
+</html>
