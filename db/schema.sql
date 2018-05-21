@@ -1,25 +1,9 @@
-CREATE database burgers_db
+CREATE SCHEMA `burgers_db` ;
 
-CREATE TABLE burgers (
-  id INT (100) NOT NULL AUTO_INCREMENT,
-  burger_name VARCHAR(255) NOT NULL,
-  devoured BOOLEAN,
-  PRIMARY KEY('id'));
-  
-);
+CREATE TABLE `burgers_db`.`burger` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `burger_name` VARCHAR(45) NOT NULL,
+  `devoured` TINYINT NOT NULL,
+  PRIMARY KEY (`id`));
 
 
-
-DROP DATABASE burgers_db;
-
-CREATE DATABASE burgers_db;
-
-USE burgers_db;
-
-CREATE TABLE burgers (
-	id INT AUTO_INCREMENT,
-	burger_name VARCHAR(255) NOT NULL,
-	devoured BOOLEAN DEFAULT false,
-	date TIMESTAMP,
-	primary key(id)
-);

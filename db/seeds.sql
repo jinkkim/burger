@@ -1,12 +1,7 @@
 USE burgers_db;
 
-INSERT INTO burgers(burger_name)
-VALUES("cheese");
+INSERT INTO `burgers_db`.`burger` (`burger_name`, `devoured`) VALUES ('cheese', '0');
+INSERT INTO `burgers_db`.`burger` (`burger_name`, `devoured`) VALUES ('mushroom', '0');
+INSERT INTO `burgers_db`.`burger` (`burger_name`, `devoured`) VALUES ('veggie', '0');
 
-INSERT INTO burgers(burger_name)
-VALUES("double bacon");
-
-INSERT INTO burgers(burger_name)
-VALUES("mushroom");
-
-SELECT * FROM burgers;
+SELECT * FROM burger;
