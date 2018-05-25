@@ -28,7 +28,7 @@ function objToSql(ob) {
 // create the ORM object to perform SQL queries
 var orm = {
 
-    selectAll: function (tableInput, cb){
+    all: function (tableInput, cb){
             
         var queryString = "SELECT * FROM " + tableInput + ";";
 
@@ -43,7 +43,7 @@ var orm = {
                 },
 
 // function that insert a single table entry
-    insertOne: function(table, cols, vals, cb){
+    create: function(table, cols, vals, cb){
             // construct the query string that inserts a single row into the target table
             var queryString = "INSERT INTO " + table;
 
@@ -65,7 +65,7 @@ var orm = {
                 },
 
 // function that updates a single table entry
-    updateOne: function(table, objColVals, condition, cb){
+    update: function(table, objColVals, condition, cb){
             //construct the query string that updates a single entry in the target table
             var queryString = "UPDATE " + table;
             
