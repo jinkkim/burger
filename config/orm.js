@@ -28,7 +28,7 @@ function objToSql(ob) {
 // create the ORM object to perform SQL queries
 var orm = {
 
-    all: function (tableInput, cb){
+    all: function(tableInput, cb){
             
         var queryString = "SELECT * FROM " + tableInput + ";";
 
